@@ -97,10 +97,10 @@
                                                         </div>
                                                         <div class="flex-grow-1 ms-3 overflow-auto">
                                                             <p class="mb-1"><strong>'.$user_name.'</strong></p>
-                                                            <h5 class="card-title"><a class="text-decoration-none" href="/forum/threads.php?'.'thread='. htmlspecialchars($row['thread_id']) .'">' . $row["thread_title"] . '</a></h5>
+                                                            <h5 class="card-title"><a class="text-decoration-none" href="/threads.php?'.'thread='. htmlspecialchars($row['thread_id']) .'">' . $row["thread_title"] . '</a></h5>
                                                             <p class="card-text mb-1">' . htmlspecialchars($row["thread_desc"]) . '</p>
                                                             <p class="card-text mb-0"><small class="text-muted">'.$when_posted.'</small></p>
-                                                            <small><p>Category - <a href="/forum/threadlist.php?catid='.$row["thread_cat_id"].'" class="card-text text-decoration-none"><strong><em>'.$row["thread_cat_id"].'</em></strong></a></p></small>
+                                                            <small><p>Category - <a href="/threadlist.php?catid='.$row["thread_cat_id"].'" class="card-text text-decoration-none"><strong><em>'.$row["thread_cat_id"].'</em></strong></a></p></small>
                                                         </div>
                                                     </div>';
                                                 }

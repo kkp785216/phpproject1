@@ -112,14 +112,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 if(isset($_GET["search"])){
     if(!isset($homeHeaderSearch)){
         $headerSearch = $_GET["search"];
-        header("location: /forum/?search=$headerSearch");
+        header("location: /?search=$headerSearch");
         exit;
     }
 }
 if(isset($_GET["threadsearch"])){
     if(!isset($searchHeaderSearch)){
         $headerSearch = $_GET["threadsearch"];
-        header("location: /forum/threadsearch.php?threadsearch=$headerSearch");
+        header("location: /threadsearch.php?threadsearch=$headerSearch");
         exit;
     }
 }
@@ -127,17 +127,17 @@ if(isset($_GET["threadsearch"])){
 echo '
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/forum">iForum</a>
+            <a class="navbar-brand" href="/">iForum</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/forum">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/forum/about.php">About</a>
+                        <a class="nav-link" href="/about.php">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -150,7 +150,7 @@ echo '
                                 $catResult = mysqli_query($conn, $catSql);
                                 if($catResult){
                                     while($catRow = mysqli_fetch_assoc($catResult)){
-                                        echo '<li><a class="dropdown-item" href="/forum/threadlist.php?catid='.$catRow["category_id"].'">'.$catRow["category_name"].'</a></li>';
+                                        echo '<li><a class="dropdown-item" href="/threadlist.php?catid='.$catRow["category_id"].'">'.$catRow["category_name"].'</a></li>';
                                     }
                                 }
                             }
@@ -161,7 +161,7 @@ echo '
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/forum/contact.php">Contact</a>
+                        <a class="nav-link" href="/contact.php">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex mb-4 mb-lg-0" method="GET">
@@ -186,7 +186,7 @@ echo '
                             ' . $user_name . '
                         </button>
                         <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="/forum/profile.php">Profile</a></li>
+                            <li><a class="dropdown-item" href="/profile.php">Profile</a></li>
                             <li><form method="POST"><input type="hidden" name="logout"><button class="dropdown-item" type="submit">Log out</button></form></li>
                         </ul>
                     </div>';

@@ -94,9 +94,9 @@
                                         <img src="img/category/' . strtolower($row["category_name"]) . '.jpg" class="card-img-top" alt="...">
                                         <div class="card-body d-flex flex-column justify-content-between">
                                             <div>
-                                            <h5 class="card-title"><a href="/forum/threadlist.php?' . 'catid=' . $row['category_id'] . '" class="text-decoration-none">' . $row["category_name"] . '</a></h5>
+                                            <h5 class="card-title"><a href="/threadlist.php?' . 'catid=' . $row['category_id'] . '" class="text-decoration-none">' . $row["category_name"] . '</a></h5>
                                             <p class="card-text">' . $desc . '</p></div>
-                                            <a href="/forum/threadlist.php?' . 'catid=' . $row['category_id'] . '" class="btn btn-primary btn-sm mt-4 " style="margin-right: auto;">View Threads</a>
+                                            <a href="/threadlist.php?' . 'catid=' . $row['category_id'] . '" class="btn btn-primary btn-sm mt-4 " style="margin-right: auto;">View Threads</a>
                                         </div>
                                     </div>
                                 </div>';
@@ -135,9 +135,9 @@
                                             <img src="img/category/' . strtolower($row["category_name"]) . '.jpg" class="card-img-top" alt="...">
                                             <div class="card-body d-flex flex-column justify-content-between">
                                                 <div>
-                                                <h5 class="card-title"><a href="/forum/threadlist.php?' . 'catid=' . $row['category_id'] . '" class="text-decoration-none">' . $row["category_name"] . '</a></h5>
+                                                <h5 class="card-title"><a href="/threadlist.php?' . 'catid=' . $row['category_id'] . '" class="text-decoration-none">' . $row["category_name"] . '</a></h5>
                                                 <p class="card-text">' . $desc . '</p></div>
-                                                <a href="/forum/threadlist.php?' . 'catid=' . $row['category_id'] . '" class="btn btn-primary btn-sm mt-4 " style="margin-right: auto;">View Threads</a>
+                                                <a href="/threadlist.php?' . 'catid=' . $row['category_id'] . '" class="btn btn-primary btn-sm mt-4 " style="margin-right: auto;">View Threads</a>
                                             </div>
                                         </div>
                                     </div>';
@@ -176,9 +176,9 @@
                                             <img src="img/category/' . strtolower($row["category_name"]) . '.jpg" class="card-img-top" alt="...">
                                             <div class="card-body d-flex flex-column justify-content-between">
                                                 <div>
-                                                <h5 class="card-title"><a href="/forum/threadlist.php?' . 'catid=' . $row['category_id'] . '" class="text-decoration-none">' . $row["category_name"] . '</a></h5>
+                                                <h5 class="card-title"><a href="/threadlist.php?' . 'catid=' . $row['category_id'] . '" class="text-decoration-none">' . $row["category_name"] . '</a></h5>
                                                 <p class="card-text">' . $desc . '</p></div>
-                                                <a href="/forum/threadlist.php?' . 'catid=' . $row['category_id'] . '" class="btn btn-primary btn-sm mt-4 " style="margin-right: auto;">View Threads</a>
+                                                <a href="/threadlist.php?' . 'catid=' . $row['category_id'] . '" class="btn btn-primary btn-sm mt-4 " style="margin-right: auto;">View Threads</a>
                                             </div>
                                         </div>
                                     </div>';
@@ -230,24 +230,24 @@
                         <li class="page-item '.$previousBtn.'">
                             <a href="'.$pageUrl.($pageIndex - 1).'" class="page-link">Previous</a>
                         </li>';
-                        // echo '<li class="page-item active"><a class="page-link" href="/forum/?page=1">1</a></li>
-                        // <li class="page-item"><a class="page-link" href="/forum/?page=2">2</a></li>
-                        // <li class="page-item"><a class="page-link" href="/forum/?page=3">3</a></li>';
+                        // echo '<li class="page-item active"><a class="page-link" href="/?page=1">1</a></li>
+                        // <li class="page-item"><a class="page-link" href="/?page=2">2</a></li>
+                        // <li class="page-item"><a class="page-link" href="/?page=3">3</a></li>';
                         // for($i=1; $i<=3; $i++){
                         //     if($i <= $totalPage){
                         //         if($i == $pageIndex){
-                        //             echo '<li class="page-item active"><a class="page-link" href="/forum/?page='.(($pageIndex + $i) - 1).'">'.(($pageIndex + $i) - 1).'</a></li>';
+                        //             echo '<li class="page-item active"><a class="page-link" href="/?page='.(($pageIndex + $i) - 1).'">'.(($pageIndex + $i) - 1).'</a></li>';
                         //         }
                         //         else{
-                        //             echo '<li class="page-item"><a class="page-link" href="/forum/?page='.(($pageIndex + $i) - 1).'">'.(($pageIndex + $i) - 1).'</a></li>';
+                        //             echo '<li class="page-item"><a class="page-link" href="/?page='.(($pageIndex + $i) - 1).'">'.(($pageIndex + $i) - 1).'</a></li>';
                         //         }
                         //     }
                         // }
                         // echo '<p><pre class="m-0 mt-auto"> ... </pre></p>';
                         echo '<p><pre class="m-0 mt-auto"> '.$pageIndex.' of '.$totalPage.' </pre></p>';
-                        // echo '<li class="page-item"><a class="page-link" href="/forum/?page=7">7</a></li>
-                        // <li class="page-item"><a class="page-link" href="/forum/?page=8">8</a></li>
-                        // <li class="page-item"><a class="page-link" href="/forum/?page=9">9</a></li>';
+                        // echo '<li class="page-item"><a class="page-link" href="/?page=7">7</a></li>
+                        // <li class="page-item"><a class="page-link" href="/?page=8">8</a></li>
+                        // <li class="page-item"><a class="page-link" href="/?page=9">9</a></li>';
                         echo '<li class="page-item '.$nextBtn.'">
                             <a class="page-link" href="'.$pageUrl.($pageIndex + 1).'">Next</a>
                         </li>
@@ -262,13 +262,13 @@
                 <li class="page-item disabled">
                     <a class="page-link">Previous</a>
                 </li>
-                <li class="page-item active"><a class="page-link" href="/forum/?page=1">1</a></li>
-                <li class="page-item"><a class="page-link" href="/forum/?page=2">2</a></li>
-                <li class="page-item"><a class="page-link" href="/forum/?page=3">3</a></li>
+                <li class="page-item active"><a class="page-link" href="/?page=1">1</a></li>
+                <li class="page-item"><a class="page-link" href="/?page=2">2</a></li>
+                <li class="page-item"><a class="page-link" href="/?page=3">3</a></li>
                 <p><pre class="m-0 mt-auto"> ... </pre></p>
-                <li class="page-item"><a class="page-link" href="/forum/?page=7">7</a></li>
-                <li class="page-item"><a class="page-link" href="/forum/?page=8">8</a></li>
-                <li class="page-item"><a class="page-link" href="/forum/?page=9">9</a></li>
+                <li class="page-item"><a class="page-link" href="/?page=7">7</a></li>
+                <li class="page-item"><a class="page-link" href="/?page=8">8</a></li>
+                <li class="page-item"><a class="page-link" href="/?page=9">9</a></li>
                 <li class="page-item">
                     <a class="page-link" href="#">Next</a>
                 </li>

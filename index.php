@@ -105,9 +105,9 @@
                                         <img src="img/category/' . strtolower($row["category_name"]) . '.jpg" class="card-img-top" alt="...">
                                         <div class="card-body d-flex flex-column justify-content-between">
                                             <div>
-                                            <h5 class="card-title"><a href="/forum/threadlist.php?' . 'catid=' . $row['category_id'] . '" class="text-decoration-none">' . $row["category_name"] . '</a></h5>
+                                            <h5 class="card-title"><a href="/threadlist.php?' . 'catid=' . $row['category_id'] . '" class="text-decoration-none">' . $row["category_name"] . '</a></h5>
                                             <p class="card-text">' . $desc . '</p></div>
-                                            <a href="/forum/threadlist.php?' . 'catid=' . $row['category_id'] . '" class="btn btn-primary btn-sm mt-4 " style="margin-right: auto;">View Threads</a>
+                                            <a href="/threadlist.php?' . 'catid=' . $row['category_id'] . '" class="btn btn-primary btn-sm mt-4 " style="margin-right: auto;">View Threads</a>
                                         </div>
                                     </div>
                                 </div>';

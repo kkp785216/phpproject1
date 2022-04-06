@@ -6,7 +6,7 @@ $password = "";
 $database = "iforum";
 $conn = mysqli_connect($servername, $username, $password, $database);
 if(!$conn){
-    header("location: /forum/dberror.php");
+    header("location: /dberror.php");
     exit;
 }
 ?>

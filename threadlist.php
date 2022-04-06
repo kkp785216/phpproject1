@@ -183,7 +183,7 @@
                                             </div>
                                             <div class="flex-grow-1 ms-3 overflow-auto">
                                                 <p class="mb-1"><strong>'.$user_name.'</strong></p>
-                                                <h5 class="card-title"><a class="text-decoration-none" href="/forum/threads.php?'.'thread='. htmlspecialchars($row['thread_id']) .'">' . $row["thread_title"] . '</a></h5>
+                                                <h5 class="card-title"><a class="text-decoration-none" href="/threads.php?'.'thread='. htmlspecialchars($row['thread_id']) .'">' . $row["thread_title"] . '</a></h5>
                                                 <p class="card-text mb-1">' . htmlspecialchars($row["thread_desc"]) . '</p>
                                                 <p class="card-text"><small class="text-muted">'.$when_posted.'</small></p>
                                             </div>
